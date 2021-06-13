@@ -21,7 +21,7 @@ import project.akbaralzaini.sesi2.util.MySession;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnSesi12,btnSesi34,btnSesi56, btnSesi78;
+    Button btnSesi12,btnSesi34,btnSesi56, btnSesi78, btnSesi910;
     SharedPreferences mSettings;
     MySession session;
 
@@ -40,12 +40,13 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         btnSesi34 = findViewById(R.id.sesi34);
         btnSesi56 = findViewById(R.id.sesi56);
         btnSesi78 = findViewById(R.id.sesi78);
+        btnSesi910 = findViewById(R.id.sesi910);
 
         btnSesi12.setOnClickListener(this);
         btnSesi34.setOnClickListener(this);
         btnSesi56.setOnClickListener(this);
         btnSesi78.setOnClickListener(this);
-
+        btnSesi910.setOnClickListener(this);
     }
 
     @Override
@@ -63,8 +64,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 menuDialog("sesi 5","sesi 6");
                 break;
             case R.id.sesi78:
-                Intent c = new Intent(getApplicationContext(), AgencyActivity.class);
+                Intent c = new Intent(getApplicationContext(), ListViewActivity.class);
                 startActivity(c);
+                break;
+            case R.id.sesi910:
+                Intent d = new Intent(getApplicationContext(), AgencyActivity.class);
+                startActivity(d);
                 break;
             default:
                 break;

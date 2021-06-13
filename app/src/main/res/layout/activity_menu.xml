@@ -55,9 +55,10 @@
             android:layout_marginTop="12dp"/>
 
         <Button
+            android:id="@+id/sesi910"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sesi 7 &amp; 8"
+            android:text="Sesi 9 &amp; 10"
             android:textSize="18sp"
             android:layout_marginTop="12dp"/>
         <Button
