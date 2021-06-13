@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.InfoActivity">
+    <RelativeLayout
+        android:id="@+id/layOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ayo_kita_bisa"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_dark"/>
+
+        <TextView
+            android:id="@+id/txtClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:background="@color/gray_dark"
+            android:padding="5dp"
+            android:text="X"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+<!--    <TextInputLayout/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linkUrl"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_below="@id/layOne">
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:layout_weight="3"
+            android:id="@+id/edtLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="link url"
+            android:autofillHints="link url" />
+        <Button
+            android:layout_marginStart="18dp"
+            android:id="@+id/btnSubmit"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Akses link"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="ini info web view assets"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layTwo"
+        android:layout_below="@id/linkUrl"/>
+
+</RelativeLayout>

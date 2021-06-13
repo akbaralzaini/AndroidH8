@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iconLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:src="@drawable/draw"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/login_icon" />
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="30dp"
+           android:layout_marginEnd="30dp"
+           android:elevation="4dp"
+           android:padding="20dp">
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:drawableLeft="@drawable/ic_baseline_people_24"
+                        android:drawableTint="@color/black"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:hint="User Name"
+                        android:id="@+id/edUser"
+                        android:drawablePadding="10dp"
+                        android:inputType="textEmailAddress"/>
+                </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <EditText
+                       android:layout_width="fill_parent"
+                       android:layout_height="60dp"
+                       android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                       android:drawableTint="@color/black"
+                       android:padding="10dp"
+                       android:layout_marginTop="16dp"
+                       android:singleLine="true"
+                       android:hint="Password"
+                       android:drawablePadding="10dp"
+                       android:id="@+id/edPass"
+                       android:inputType="textPassword"/>
+               </com.google.android.material.textfield.TextInputLayout>
+               
+               <Button
+                   android:elevation="0dp"
+                   android:backgroundTint="@null"
+                   android:id="@+id/bLogin"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="25dp"
+                   android:background="@drawable/gradient"
+                   android:text="Login"
+                   android:textSize="18sp"
+                   android:textColor="@color/white"
+                   android:textAllCaps="false"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="12dp"
+                   android:gravity="center"
+                   android:layout_marginTop="5dp"
+                   android:text="Silakan Login..."
+                   android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+           </LinearLayout>
+       </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity ="center_vertical"
+        android:textColor="@color/gray_dark"
+        android:textSize="10sp"
+        android:text="verison 1.0"/>
+
+</RelativeLayout>
