@@ -16,6 +16,7 @@ import android.widget.Button;
 import java.util.Arrays;
 
 import project.akbaralzaini.sesi2.R;
+import project.akbaralzaini.sesi2.activity.sesi10.AgencyActivity;
 import project.akbaralzaini.sesi2.util.MySession;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
@@ -62,7 +63,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 menuDialog("sesi 5","sesi 6");
                 break;
             case R.id.sesi78:
-                Intent c = new Intent(getApplicationContext(),ListViewActivity.class);
+                Intent c = new Intent(getApplicationContext(), AgencyActivity.class);
                 startActivity(c);
                 break;
             default:
