@@ -62,55 +62,19 @@
             android:textSize="18sp"
             android:layout_marginTop="12dp"/>
         <Button
+            android:id="@+id/aboutme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sesi 7 &amp; 8"
+            android:text="About Me"
             android:textSize="18sp"
             android:layout_marginTop="12dp"/>
         <Button
+            android:id="@+id/penglaman"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sesi 7 &amp; 8"
+            android:text="Pengalaman"
             android:textSize="18sp"
             android:layout_marginTop="12dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sesi 7 &amp; 8"
-            android:textSize="18sp"
-            android:layout_marginTop="12dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sesi 7 &amp; 8"
-            android:textSize="18sp"
-            android:layout_marginTop="12dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sesi 7 &amp; 8"
-            android:textSize="18sp"
-            android:layout_marginTop="12dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sesi 7 &amp; 8"
-            android:textSize="18sp"
-            android:layout_marginTop="12dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sesi 7 &amp; 8"
-            android:textSize="18sp"
-            android:layout_marginTop="12dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sesi 7 &amp; 8"
-            android:textSize="18sp"
-            android:layout_marginTop="12dp"/>
-
-
     </LinearLayout>
 
 </ScrollView>

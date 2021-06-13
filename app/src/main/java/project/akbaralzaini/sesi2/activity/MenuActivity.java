@@ -16,12 +16,13 @@ import android.widget.Button;
 import java.util.Arrays;
 
 import project.akbaralzaini.sesi2.R;
+import project.akbaralzaini.sesi2.activity.sesi10.AboutActivity;
 import project.akbaralzaini.sesi2.activity.sesi10.AgencyActivity;
 import project.akbaralzaini.sesi2.util.MySession;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnSesi12,btnSesi34,btnSesi56, btnSesi78, btnSesi910;
+    Button btnSesi12,btnSesi34,btnSesi56, btnSesi78, btnSesi910, btnAboutme;
     SharedPreferences mSettings;
     MySession session;
 
@@ -41,12 +42,14 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         btnSesi56 = findViewById(R.id.sesi56);
         btnSesi78 = findViewById(R.id.sesi78);
         btnSesi910 = findViewById(R.id.sesi910);
+        btnAboutme = findViewById(R.id.aboutme);
 
         btnSesi12.setOnClickListener(this);
         btnSesi34.setOnClickListener(this);
         btnSesi56.setOnClickListener(this);
         btnSesi78.setOnClickListener(this);
         btnSesi910.setOnClickListener(this);
+        btnAboutme.setOnClickListener(this);
     }
 
     @Override
@@ -71,6 +74,9 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 Intent d = new Intent(getApplicationContext(), AgencyActivity.class);
                 startActivity(d);
                 break;
+            case R.id.aboutme:
+                Intent e = new Intent(getApplicationContext(), AboutActivity.class);
+                startActivity(e);
             default:
                 break;
         }

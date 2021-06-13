@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Helloworld"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.sesi10.AgencyActivity"></activity>
+        <activity android:name=".activity.sesi10.AboutActivity"></activity>
+        <activity android:name=".activity.sesi10.AgencyActivity" />
         <activity android:name=".activity.ListViewActivity" />
         <activity
             android:name=".activity.FloatingActivity"
